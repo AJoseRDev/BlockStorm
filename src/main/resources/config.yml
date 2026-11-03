@@ -1,0 +1,42 @@
+# ──────────────────────────────────────────────
+#  BlockStorm - configuration
+# ──────────────────────────────────────────────
+
+# Language file from plugins/BlockStorm/lang (en, es). You can add your own.
+language: en
+
+game:
+  autostart: true              # start the countdown automatically once min players are in
+  countdown-seconds: 15
+  end-delay-seconds: 6         # time between the last elimination and returning players
+  max-duration-seconds: 0      # 0 = unlimited. When reached, everyone still alive wins
+  teleport-back: true          # send players back to where they were
+  pvp: false
+  regeneration: false          # natural health regeneration during a game
+  out-of-bounds-eliminates: true   # false = teleport back to the spawn instead
+  crush-eliminates: false      # true = a block landing on you is instant elimination
+                               # false = you get lifted on top of it (or eliminated if there is no room)
+  allowed-commands: [blockstorm, bs, bstorm]   # commands usable during a game
+
+difficulty:
+  initial-interval-ticks: 24   # ticks between waves at the start
+  min-interval-ticks: 4        # fastest possible wave interval
+  interval-step-ticks: 2       # interval reduction on every level
+  ramp-seconds: 10             # seconds per level
+  extra-block-every-levels: 3  # +1 block per wave every N levels
+  max-blocks-per-wave: 5
+  target-chance: 0.25          # chance a block is aimed at a random living player
+  hit-damage: 3.0              # damage when a falling block hits a player in mid-air
+
+# Commands run by the console. Placeholders: %player% %arena% %seconds%
+rewards:
+  participation: []
+  winner: []
+  # Examples:
+  # participation:
+  #   - "eco give %player% 25"
+  # winner:
+  #   - "give %player% diamond 3"
+
+menu:
+  enabled: true                # /bs join opens an arena menu

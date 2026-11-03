@@ -1,0 +1,24 @@
+name: BlockStorm
+version: '${project.version}'
+main: dev.blockstorm.BlockStormPlugin
+api-version: '1.21'
+description: Survive the falling block storm.
+authors: [AJoseR]
+commands:
+  blockstorm:
+    description: BlockStorm main command
+    aliases: [bs, bstorm]
+    usage: /<command> help
+permissions:
+  blockstorm.play:
+    description: Join and play games
+    default: true
+  blockstorm.stats:
+    description: View stats and leaderboards
+    default: true
+  blockstorm.admin:
+    description: Create and manage arenas
+    default: op
+  blockstorm.bypass:
+    description: Use any command while in a game
+    default: op

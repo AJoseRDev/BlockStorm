@@ -1,0 +1,166 @@
+# BlockStorm - Español. Formato MiniMessage: https://docs.advntr.dev/minimessage/format.html
+prefix: "<gradient:#ff8a00:#ffd200><bold>BlockStorm</bold></gradient> <dark_gray>»</dark_gray> "
+
+general:
+  no-permission: "<red>No tienes permiso para hacer eso."
+  players-only: "<red>Este comando solo puede usarlo un jugador."
+  unknown-arena: "<red>La arena <white><arena></white> no existe."
+  unknown-player: "<red>No se encontró al jugador <white><player></white>."
+  usage: "<gray>Uso: <white><usage></white>"
+  reloaded: "<green>BlockStorm recargado. Se detuvieron todas las partidas."
+  not-playing: "<red>No estás en una partida."
+  already-playing: "<red>Ya estás en una partida. Usa <white>/bs leave</white> primero."
+  command-blocked: "<red>No puedes usar ese comando durante una partida."
+  inventory-restored: "<green>Se restauró tu inventario tras una partida interrumpida."
+  no-arena-available: "<red>No hay ninguna arena disponible ahora mismo."
+  no-arenas: "<red>Todavía no se ha creado ninguna arena."
+  invalid-number: "<red><value> no es un número válido."
+  arena-busy: "<red>Esa arena tiene jugadores. Detén la partida primero (<white>/bs forcestop</white>)."
+
+error:
+  arena-disabled: "<red>Esa arena está desactivada."
+  arena-not-ready: "<red>Esa arena todavía no está configurada."
+  arena-in-progress: "<red>Ya hay una ronda en curso en esa arena."
+  arena-full: "<red>Esa arena está llena."
+
+problem:
+  none: "<green>ninguno"
+  zone: "<red>falta la zona"
+  lobby: "<red>falta el lobby"
+  spawn: "<red>falta el punto de aparición"
+  spawn-outside: "<red>el punto de aparición está fuera de la zona"
+  palette: "<red>no hay bloques en la paleta"
+
+game:
+  joined: "<white><player></white> <gray>se unió a la partida <dark_gray>(<yellow><count>/<max></yellow>)"
+  left: "<white><player></white> <gray>salió de la partida."
+  countdown: "<yellow>Empieza en <white><seconds></white> segundos"
+  countdown-title: "<gold><bold><seconds>"
+  countdown-subtitle: "<gray>¡Prepárate!"
+  countdown-cancelled: "<red>No hay jugadores suficientes. Cuenta atrás cancelada."
+  start-title: "<red><bold>¡CORRE!"
+  start-subtitle: "<gray>Sobrevive a la tormenta de bloques"
+  level-up: "<gold><bold>¡Nivel <level>!</bold> <gray>La tormenta se intensifica..."
+  eliminated-title: "<red>Eliminado"
+  eliminated-subtitle: "<gray>Sobreviviste <white><time></white> segundos"
+  eliminated:
+    crushed: "<red><player></red> <gray>fue aplastado tras <white><time></white>s."
+    hit: "<red><player></red> <gray>fue noqueado por un bloque tras <white><time></white>s."
+    out-of-bounds: "<red><player></red> <gray>salió de la arena tras <white><time></white>s."
+    other: "<red><player></red> <gray>fue eliminado tras <white><time></white>s."
+  victory-title: "<gold><bold>¡VICTORIA!"
+  victory-subtitle: "<gray>Sobreviviste <white><time></white> segundos"
+  winner: "<gold><player></gold> <yellow>ganó la ronda tras <white><time></white>s!"
+  draw: "<yellow>¡Se acabó el tiempo! Ganan todos los que siguen en pie (<white><time></white>s)."
+  solo-over: "<yellow>¡Ronda terminada! Sobreviviste <white><time></white> segundos."
+  results-header: "<gold>━━━ Mejores supervivientes ━━━"
+  results-line: "<yellow><position>. <white><player> <dark_gray>- <gray><time>s"
+
+sidebar:
+  title: "<gradient:#ff8a00:#ffd200><bold>BLOCKSTORM"
+  waiting:
+    - " "
+    - "<gray>Arena: <white><arena>"
+    - "<gray>Jugadores: <white><players>/<max>"
+    - "<gray>Estado: <status>"
+    - " "
+  running:
+    - " "
+    - "<gray>Tiempo: <white><time>"
+    - "<gray>Vivos: <green><alive>"
+    - "<gray>Nivel: <gold><level>"
+    - " "
+    - "<gray>Arena: <white><arena>"
+
+status:
+  waiting: "<green>Esperando"
+  countdown: "<yellow>Empieza en <countdown>s"
+  running: "<red>En curso"
+  ending: "<gold>Terminando"
+  unavailable: "<gray>No disponible"
+
+bossbar:
+  waiting: "<yellow>Esperando jugadores... <white><players>/<min>"
+  countdown: "<yellow>Empieza en <white><countdown></white>s"
+  running: "<red><bold>Nivel <level></bold> <gray>- <white><time>"
+  ending: "<gold>Ronda terminada"
+
+menu:
+  title: "<dark_gray>BlockStorm - Arenas"
+  item-name: "<gold><arena>"
+  lore:
+    - "<gray>Jugadores: <white><players>/<max>"
+    - "<gray>Estado: <status>"
+    - " "
+    - "<yellow>Clic para unirte"
+
+stats:
+  none: "<gray><player> todavía no ha jugado."
+  lines:
+    - "<gold>━━━ Estadísticas: <white><player> <gold>━━━"
+    - "<gray>Partidas jugadas: <white><games>"
+    - "<gray>Victorias: <white><wins>"
+    - "<gray>Mejor supervivencia: <white><best>"
+    - "<gray>Tiempo total sobrevivido: <white><total>"
+
+top:
+  header: "<gold>━━━ Top 10 - <category> ━━━"
+  empty: "<gray>Todavía no hay datos."
+  line: "<yellow><position>. <white><player> <dark_gray>- <gray><value>"
+  category:
+    best: "Mejor supervivencia"
+    wins: "Victorias"
+    games: "Partidas jugadas"
+
+list:
+  header: "<gold>━━━ Arenas ━━━"
+  line: "<white><arena> <dark_gray>- <gray><players>/<max> <dark_gray>- <status>"
+
+admin:
+  created: "<green>Arena <white><arena></white> creada. Siguiente: <white>/bs wand</white> → selecciona la zona → <white>/bs setzone <arena></white>."
+  deleted: "<green>Arena <white><arena></white> eliminada."
+  exists: "<red>Ya existe una arena llamada <white><arena></white>."
+  invalid-name: "<red>El nombre solo puede tener letras, números, - y _ (máx. 24)."
+  wand-given: "<green>Recibiste la varita de selección. Clic izquierdo = posición 1, clic derecho = posición 2."
+  wand-pos: "<gray>Posición <white><n></white> fijada en <white><x>, <y>, <z>"
+  zone-missing: "<red>Primero selecciona dos posiciones con la varita (<white>/bs wand</white>)."
+  zone-world-mismatch: "<red>Ambas posiciones deben estar en el mismo mundo."
+  zone-set: "<green>Zona de <white><arena></white> definida (<white><size></white>). La capa superior es donde aparecen los bloques."
+  lobby-set: "<green>Lobby de <white><arena></white> fijado en tu posición."
+  spawn-set: "<green>Punto de aparición de <white><arena></white> fijado en tu posición."
+  spawn-outside-zone: "<red>El punto de aparición debe estar dentro de la zona."
+  min-set: "<green>Mínimo de jugadores de <white><arena></white>: <white><value></white>."
+  max-set: "<green>Máximo de jugadores de <white><arena></white>: <white><value></white>."
+  palette-set: "<green>Paleta de <white><arena></white> actualizada (<white><count></white> tipos de bloque)."
+  invalid-material: "<red><value> no es un bloque sólido válido."
+  enabled: "<green>Arena <white><arena></white> activada."
+  disabled: "<yellow>Arena <white><arena></white> desactivada."
+  force-started: "<green>Ronda iniciada en <white><arena></white>."
+  cannot-start: "<red>No se puede iniciar <white><arena></white> ahora (sin jugadores o ya en curso)."
+  force-stopped: "<yellow>Partida de <white><arena></white> detenida."
+  info:
+    - "<gold>━━━ Arena <white><arena> <gold>━━━"
+    - "<gray>Estado: <status>"
+    - "<gray>Zona: <white><size>"
+    - "<gray>Jugadores: <white><min>-<max>"
+    - "<gray>Bloques: <white><palette>"
+    - "<gray>Problemas de configuración: <problem>"
+
+help:
+  player:
+    - "<gold>━━━ BlockStorm ━━━"
+    - "<yellow>/bs join [arena] <gray>- unirte a una partida"
+    - "<yellow>/bs leave <gray>- salir de tu partida"
+    - "<yellow>/bs list <gray>- lista de arenas"
+    - "<yellow>/bs stats [jugador] <gray>- ver estadísticas"
+    - "<yellow>/bs top [best|wins|games] <gray>- clasificaciones"
+  admin:
+    - "<gold>Administración:"
+    - "<yellow>/bs create|delete <arena>"
+    - "<yellow>/bs wand <gray>- herramienta de selección"
+    - "<yellow>/bs setzone|setlobby|setspawn <arena>"
+    - "<yellow>/bs setmin|setmax <arena> <cantidad>"
+    - "<yellow>/bs palette <arena> <bloques...>"
+    - "<yellow>/bs enable|disable|info <arena>"
+    - "<yellow>/bs forcestart|forcestop <arena>"
+    - "<yellow>/bs reload"

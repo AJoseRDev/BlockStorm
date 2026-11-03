@@ -1,0 +1,166 @@
+# BlockStorm - English. MiniMessage formatting: https://docs.advntr.dev/minimessage/format.html
+prefix: "<gradient:#ff8a00:#ffd200><bold>BlockStorm</bold></gradient> <dark_gray>»</dark_gray> "
+
+general:
+  no-permission: "<red>You don't have permission to do that."
+  players-only: "<red>This command can only be used by players."
+  unknown-arena: "<red>The arena <white><arena></white> doesn't exist."
+  unknown-player: "<red>Player <white><player></white> was not found."
+  usage: "<gray>Usage: <white><usage></white>"
+  reloaded: "<green>BlockStorm reloaded. All running games were stopped."
+  not-playing: "<red>You are not in a game."
+  already-playing: "<red>You are already in a game. Use <white>/bs leave</white> first."
+  command-blocked: "<red>You can't use that command during a game."
+  inventory-restored: "<green>Your inventory was restored after an interrupted game."
+  no-arena-available: "<red>There is no arena available right now."
+  no-arenas: "<red>No arenas have been created yet."
+  invalid-number: "<red><value> is not a valid number."
+  arena-busy: "<red>That arena has players in it. Stop the game first (<white>/bs forcestop</white>)."
+
+error:
+  arena-disabled: "<red>That arena is disabled."
+  arena-not-ready: "<red>That arena is not set up yet."
+  arena-in-progress: "<red>A round is already in progress in that arena."
+  arena-full: "<red>That arena is full."
+
+problem:
+  none: "<green>none"
+  zone: "<red>zone not set"
+  lobby: "<red>lobby not set"
+  spawn: "<red>spawn point not set"
+  spawn-outside: "<red>spawn point is outside the zone"
+  palette: "<red>no blocks in the palette"
+
+game:
+  joined: "<white><player></white> <gray>joined the game <dark_gray>(<yellow><count>/<max></yellow>)"
+  left: "<white><player></white> <gray>left the game."
+  countdown: "<yellow>Starting in <white><seconds></white> seconds"
+  countdown-title: "<gold><bold><seconds>"
+  countdown-subtitle: "<gray>Get ready!"
+  countdown-cancelled: "<red>Not enough players. Countdown cancelled."
+  start-title: "<red><bold>RUN!"
+  start-subtitle: "<gray>Survive the block storm"
+  level-up: "<gold><bold>Level <level>!</bold> <gray>The storm gets stronger..."
+  eliminated-title: "<red>Eliminated"
+  eliminated-subtitle: "<gray>You survived <white><time></white> seconds"
+  eliminated:
+    crushed: "<red><player></red> <gray>was crushed after <white><time></white>s."
+    hit: "<red><player></red> <gray>was knocked out by a block after <white><time></white>s."
+    out-of-bounds: "<red><player></red> <gray>left the arena after <white><time></white>s."
+    other: "<red><player></red> <gray>was eliminated after <white><time></white>s."
+  victory-title: "<gold><bold>VICTORY!"
+  victory-subtitle: "<gray>You survived <white><time></white> seconds"
+  winner: "<gold><player></gold> <yellow>won the round after <white><time></white>s!"
+  draw: "<yellow>Time is up! Everyone left standing wins (<white><time></white>s)."
+  solo-over: "<yellow>Round over! You survived <white><time></white> seconds."
+  results-header: "<gold>━━━ Top survivors ━━━"
+  results-line: "<yellow><position>. <white><player> <dark_gray>- <gray><time>s"
+
+sidebar:
+  title: "<gradient:#ff8a00:#ffd200><bold>BLOCKSTORM"
+  waiting:
+    - " "
+    - "<gray>Arena: <white><arena>"
+    - "<gray>Players: <white><players>/<max>"
+    - "<gray>Status: <status>"
+    - " "
+  running:
+    - " "
+    - "<gray>Time: <white><time>"
+    - "<gray>Alive: <green><alive>"
+    - "<gray>Level: <gold><level>"
+    - " "
+    - "<gray>Arena: <white><arena>"
+
+status:
+  waiting: "<green>Waiting"
+  countdown: "<yellow>Starting in <countdown>s"
+  running: "<red>In progress"
+  ending: "<gold>Ending"
+  unavailable: "<gray>Unavailable"
+
+bossbar:
+  waiting: "<yellow>Waiting for players... <white><players>/<min>"
+  countdown: "<yellow>Starting in <white><countdown></white>s"
+  running: "<red><bold>Level <level></bold> <gray>- <white><time>"
+  ending: "<gold>Round over"
+
+menu:
+  title: "<dark_gray>BlockStorm - Arenas"
+  item-name: "<gold><arena>"
+  lore:
+    - "<gray>Players: <white><players>/<max>"
+    - "<gray>Status: <status>"
+    - " "
+    - "<yellow>Click to join"
+
+stats:
+  none: "<gray><player> hasn't played yet."
+  lines:
+    - "<gold>━━━ Stats: <white><player> <gold>━━━"
+    - "<gray>Games played: <white><games>"
+    - "<gray>Wins: <white><wins>"
+    - "<gray>Best survival: <white><best>"
+    - "<gray>Total survived: <white><total>"
+
+top:
+  header: "<gold>━━━ Top 10 - <category> ━━━"
+  empty: "<gray>No data yet."
+  line: "<yellow><position>. <white><player> <dark_gray>- <gray><value>"
+  category:
+    best: "Best survival"
+    wins: "Wins"
+    games: "Games played"
+
+list:
+  header: "<gold>━━━ Arenas ━━━"
+  line: "<white><arena> <dark_gray>- <gray><players>/<max> <dark_gray>- <status>"
+
+admin:
+  created: "<green>Arena <white><arena></white> created. Next: <white>/bs wand</white> → select the zone → <white>/bs setzone <arena></white>."
+  deleted: "<green>Arena <white><arena></white> deleted."
+  exists: "<red>An arena called <white><arena></white> already exists."
+  invalid-name: "<red>Names may only contain letters, numbers, - and _ (max 24)."
+  wand-given: "<green>You received the selection wand. Left click = position 1, right click = position 2."
+  wand-pos: "<gray>Position <white><n></white> set to <white><x>, <y>, <z>"
+  zone-missing: "<red>Select two positions with the wand first (<white>/bs wand</white>)."
+  zone-world-mismatch: "<red>Both positions must be in the same world."
+  zone-set: "<green>Zone of <white><arena></white> set (<white><size></white>). The top layer is where blocks spawn."
+  lobby-set: "<green>Lobby of <white><arena></white> set to your position."
+  spawn-set: "<green>Spawn point of <white><arena></white> set to your position."
+  spawn-outside-zone: "<red>The spawn point must be inside the zone."
+  min-set: "<green>Minimum players of <white><arena></white> set to <white><value></white>."
+  max-set: "<green>Maximum players of <white><arena></white> set to <white><value></white>."
+  palette-set: "<green>Palette of <white><arena></white> updated (<white><count></white> block types)."
+  invalid-material: "<red><value> is not a valid solid block."
+  enabled: "<green>Arena <white><arena></white> enabled."
+  disabled: "<yellow>Arena <white><arena></white> disabled."
+  force-started: "<green>Round in <white><arena></white> started."
+  cannot-start: "<red>Can't start <white><arena></white> right now (no players or already running)."
+  force-stopped: "<yellow>Game in <white><arena></white> stopped."
+  info:
+    - "<gold>━━━ Arena <white><arena> <gold>━━━"
+    - "<gray>Status: <status>"
+    - "<gray>Zone: <white><size>"
+    - "<gray>Players: <white><min>-<max>"
+    - "<gray>Blocks: <white><palette>"
+    - "<gray>Setup problems: <problem>"
+
+help:
+  player:
+    - "<gold>━━━ BlockStorm ━━━"
+    - "<yellow>/bs join [arena] <gray>- join a game"
+    - "<yellow>/bs leave <gray>- leave your game"
+    - "<yellow>/bs list <gray>- list arenas"
+    - "<yellow>/bs stats [player] <gray>- view stats"
+    - "<yellow>/bs top [best|wins|games] <gray>- leaderboards"
+  admin:
+    - "<gold>Admin:"
+    - "<yellow>/bs create|delete <arena>"
+    - "<yellow>/bs wand <gray>- selection tool"
+    - "<yellow>/bs setzone|setlobby|setspawn <arena>"
+    - "<yellow>/bs setmin|setmax <arena> <amount>"
+    - "<yellow>/bs palette <arena> <blocks...>"
+    - "<yellow>/bs enable|disable|info <arena>"
+    - "<yellow>/bs forcestart|forcestop <arena>"
+    - "<yellow>/bs reload"
